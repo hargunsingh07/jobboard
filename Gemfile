@@ -6,9 +6,6 @@ gem 'kaminari'
 gem 'bootstrap', '~> 5.3', '>= 5.3.1'
 gem 'dartsass-sprockets'
 
-
-
-
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.3", ">= 7.1.3.2"
 
