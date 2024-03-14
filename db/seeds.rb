@@ -34,6 +34,7 @@ end
     email: Faker::Internet.email
   )
 end
+
 # Apply Applicants to Job Listings
 JobListing.all.each do |job_listing|
   job_listing.applicants << Applicant.order('RANDOM()').limit(rand(1..5))
