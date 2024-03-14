@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="card my-3">
+    <div class="card-body">
+      <h1 class="card-title"><%= @job_listing.title %></h1>
+      <p class="card-text"><%= @job_listing.description %></p>
+      <p class="card-text"><strong>Company:</strong> <%= @job_listing.company.name %></p>
+      <p class="card-text"><strong>Applicants:</strong></p>
+      <ul class="list-group list-group-flush">
+        <% @job_listing.applicants.each do |applicant| %>
+          <li class="list-group-item"><%= link_to applicant.name, applicant %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>
