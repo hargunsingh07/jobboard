@@ -15,6 +15,5 @@ Rails.application.routes.draw do
 
   resources :companies, only: [:show]
   resources :applicants, only: [:index, :show]
-
   get '/about', to: 'pages#about'
 end
